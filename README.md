@@ -1,6 +1,6 @@
 # RAMEN #
 
-Simple front-end boilerplate
+Simple front-end boilerplate using Gulp
 
 __Includes:__
   * BrowserSync
