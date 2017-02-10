@@ -1,0 +1,15 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+.htaccess
+npm-debug.log
+node_modules
+.idea/
+.DS_Store
+.sass-cache
+._*
+*.sublime-*
