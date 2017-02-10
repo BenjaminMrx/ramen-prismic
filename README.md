@@ -37,3 +37,11 @@ or
 __Config:__
 
 You can change some config options at `build/config.json`
+
+
+
+## Credits
+
+Based on NU boilerplate by Giulian Drimba : https://github.com/giuliandrimba/nu
+
+Simplified version and SASS support by Anthony Boutet @littlesuckers
