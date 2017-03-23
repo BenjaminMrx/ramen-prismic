@@ -6,6 +6,7 @@ var argv = require("yargs").argv;
 var buildHTML = require("./util/buildVersion")
 var replace = require('gulp-replace');
 var gutil = require('gulp-util');
+var jade = require('gulp-pug')
 
 gulp.task('html', function() {
 
@@ -15,8 +16,10 @@ gulp.task('html', function() {
   version = version.replace(/{{ name }}/, pkg.description.toString())
 
   var local = gulp.src(config.html.src)
-      .pipe(argv.env === "production" ? gutil.noop() : replace(/<!-- build:version -->/g, version))
-      .pipe(rename('index.html'))
+      .pipe(jade({
+        pretty: true
+      }))
+      .pipe(argv.env === "production" ? gutil.noop() : replace(/<!-- build:version-->/g, version))
       .pipe(gulp.dest(config.html.dest));
 
 
