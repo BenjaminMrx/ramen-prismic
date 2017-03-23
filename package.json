@@ -63,5 +63,9 @@
     "pug": "^2.0.0-alpha6",
     "request": "^2.76.0",
     "serve-favicon": "~2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BenjaminMrx/ramen-prismic.git"
   }
 }

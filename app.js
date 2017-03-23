@@ -37,7 +37,7 @@ app.use((req, res, next) => {
     next();
   }).catch(function(err) {
     if (err.status == 404) {
-      render404(req, res, 'There was a problem connecting to your API. Please configure your API-Endpoint in your configuration file.');
+      render404(req, res, 'There was a problem connecting to your API. Please configure your API-Endpoint in prismic-configuration.js file.');
     } else {
       res.status(500).render('error', {message: err});
     }
